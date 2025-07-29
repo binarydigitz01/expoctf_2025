@@ -1,4 +1,2 @@
-# Infinitekill
-Author: binarydigitz01 (Arnav Vijaywargiya)
-
-TODO: write this later
+# ExpoCTF Writeups (MIST)
+This repo contains the writeups of expoctf 2025 conducted by MIST.
