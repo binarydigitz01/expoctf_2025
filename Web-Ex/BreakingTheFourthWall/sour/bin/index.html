@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Breakout</title>
+        <style>
+         /* canvas {
+            background: #000;
+            display: block;
+            margin: auto;
+            } */
+         canvas {
+             display: block;
+             background: black;
+             /* margin: auto; */
+             position: absolute;
+             transition: transform 2s ease-in-out;
+         }
+
+         #seedInputContainer {
+             text-align: center;
+             margin-top: 20px;
+         }
+
+         #gameOverScreen {
+             position: absolute;
+             width: 100vw;
+             height: 100vh;
+             background: black;
+             display: none;
+             justify-content: center;
+             align-items: center;
+             flex-direction: column;
+             font-size: 32px;
+         }
+         #gameOverText {
+             color: white;
+         }
+        </style>
+    </head>
+
+    <body>
+        <div id="seedInputContainer">
+            <label for="seedInput">Enter Seed:</label>
+            <input type="number" id="seedInput">
+            <button id="startgamebtn">Start Game</button>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="gameOverScreen">
+            <p id="gameOverText">Game Over. But is it really?</p>
+        </div>
+        <script type="text/javascript" src="reflect.js"></script>
+        <script type="text/javascript" src="breakout.js"></script>
+    </body>
+
+</html>

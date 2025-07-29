@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  hoot-app:
+    build: .
+    ports:
+      - "4500:8088"
+    command: ["guile", "-c", "((@ (hoot web-server) serve))"]
